@@ -1,0 +1,994 @@
+
+* body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Story Script", sans-serif;
+}
+#topoContainer {
+    width: 980px;
+    height: 100px;
+    margin: auto;
+    /* background-color: lightgray; */
+}
+.espacoTop{
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+#logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    /*background-color: lightgreen; */
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+}
+#logo img {
+    width: 55%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-top: -20px;
+}
+#menu {
+    width: 780px;
+    height: 100px;
+    float: right;
+    text-align: center;
+    word-spacing: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+} 
+#menu a {
+    color: rgb(175, 0, 172);    
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 100px;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#menu a:hover {
+    color: rgb(118, 0, 147);
+    font-size: 22px;
+}
+#menu button {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(175, 0, 172);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#menu button:hover {
+    border-radius: 10px;
+    background-color: rgb(118, 0, 147);
+    cursor: pointer;
+}
+#menu button p{
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 400px;
+    margin-left: 20px;
+    background-color: #fff;
+}
+/*Tmanho dos Copos*/
+#tamanho{
+    width: 100%;
+    height: 350px;
+    /*background-color: lightgray;*/
+    margin-top: 0;
+}
+#tamanho h2{
+    text-align: center;
+    padding-top: 5px;
+   color: rgb(247, 223, 13);
+    font-family: "Boldonse", system-ui;
+    
+}
+#tamanho p{
+    text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+#pequeno{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 210px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#medio{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#grande{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#pequeno:hover{
+width: 21%;
+    height: 305px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 210px;
+    margin-top: 10px;
+    border-radius: 10px;
+     transform: rotate(5deg) scale(1.0); 
+    transition: all 0.3s ease-in-out;
+}
+#medio:hover, #grande:hover{
+    width: 21%;
+    height: 305px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+     transform: rotate(5deg) scale(1.0); 
+    transition: all 0.3s ease-in-out;
+}
+/*Final Tamanho dos Copos*/
+
+/*Início Preço Adicionais*/
+#PreçoAcompanhamentos P{
+    text-align: center;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 27px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#preçoGrátis {
+    width: 200px;
+    height: 40px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 237px;
+    margin-right: 20px;
+    margin-top: -40px;
+    color: #fff;
+    font-family: "Boldonse", system-ui;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+}
+
+#PreçoAdicionais {
+    width: 200px;
+    height: 40px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 530px;
+    margin-right: 20px;
+    margin-top: -40px;
+    color: #fff;
+    font-family: "Boldonse", system-ui;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+}
+
+#PreçoAdicionais2 {
+    width: 200px;
+    height: 40px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 830px;
+    margin-right: 20px;
+    margin-top: -40px; /* mesmo valor dos outros */
+    color: #fff;
+    font-family: "Boldonse", system-ui;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+}
+#preçoGrátis:hover {
+    width: 210px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(175,0, 172), rgb(88, 0, 106));
+    cursor: pointer;
+}
+#PreçoAdicionais:hover, #PreçoAdicionais2:hover {
+    width: 210px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(175,0, 172), rgb(88, 0, 106));
+    cursor: pointer;
+}
+
+/*Final  do Preço Adicionais*/
+#acompanhamentos{
+    width: 100%;
+    height: 350px;
+    /*background-color: lightgray;*/
+    margin-top: 0;
+    margin-bottom: auto;
+
+}
+
+#acompanhamentos p{
+    text-align: center;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 27px;
+    color: #fff;
+}
+#Grátis{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 210px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#Adicionais{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+#Adicionais2{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#Grátis p{
+    text-align: center;
+    font-family: "Elms Sans", sans-serif;
+    font-size: 27px;
+    text-align: justify;
+    margin-left: 10px;
+}
+#Grátis p:hover{
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(247, 223, 13);
+}
+#Adicionais p:hover, #Adicionais2 p:hover{
+    font-size: 21px;
+    cursor: pointer;
+    color: rgb(247, 223, 13);
+}
+/* inicio de texto*/
+#conteudoSite{
+    width: 100%;
+    height: 400px;
+    /*background-color: aqua;*/
+}
+#imagem-fruta{
+    float: left;
+    width: 500px;
+    /*background-color: lightcoral;*/
+}
+#imagem-fruta img{
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 15px;
+    /* background-color: lightcoral; */
+}
+#texto-fruta h1{
+    float: right;
+    width: 57%;
+    /*background-color: lightblue;*/
+    text-align: left;
+    margin-top: 70px;
+    font-family: "Boldonse", system-ui;
+    color:  rgb(118, 0, 147);;
+}
+#texto-fruta h2{
+     float: right;
+    width: 57%;
+    /*background-color: lightblue;*/
+    text-align: left;
+    margin-top: 70px;
+    margin-right: 5px;
+    text-align: justify;
+    margin-top: 0px;
+    color:rgb(115, 0, 146);
+    font-family: "Inter", sans-serif;
+}
+#titulo-escolha{
+    width: 100%;
+    height: auto;
+    /*background-color: lightgray;*/
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding: 20px;   
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(88, 0, 106);
+    font-family: "Boldonse", system-ui;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*final de texto*/
+#rodapé-açai{
+    width: 100%;
+    height: 100px;
+    margin-top: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+#rodapé-açai img{
+    width: 90px;
+    float: left;
+    margin-left: 530px;
+}
+
+h4{
+    float: right;
+    margin-right: 500px;
+    margin-top: 40px;
+    color: rgb(160, 8, 190);
+    font-family: "Boldonse", system-ui;
+}
+/*Final Açai*/
+/*inicio Milkshake*/
+
+/*inicio fileira*/
+#fileira1 h1, #fileira2 h1{
+    font-size: 50px;
+    color: rgb(197, 67, 223);
+    margin-top: -10px;
+}
+#fileira1 p, #fileira2 p{
+    font-size: 15px;
+    color: rgb(231, 142, 249);
+    margin-top: -10px;
+}
+
+#fileira1{
+    width: 100%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 0;
+    margin-bottom: auto;
+}
+#fileira1 img{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+#fileira1 img:hover{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    transform: rotate(5deg) scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+#btnInfo{
+    width: 200px;
+    height: 30px;
+    margin-top: -10px; /* Ajustado para dar espaço ao span */
+    margin-left: 20px;
+    background: linear-gradient(to right, rgb(175,0, 172), rgb(88, 0, 106));
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+#btnInfo:hover {
+    width: 210px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(88, 0, 106), rgb(175, 0, 172));
+    cursor: pointer;
+}
+
+#chocolate, #Ovomaltine, #Maracujá, #Morango1 {
+    background-color: rgb(233, 206, 239);;
+    position: relative; 
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-left: 10px; 
+    margin-top: 25px;
+    border-radius: 15px;
+}
+#chocolate {
+    background-color: rgb(233, 206, 239);;
+    margin-left: 100px; 
+}
+#chocolate:hover, #Ovomaltine:hover, #Maracujá:hover, #Morango1:hover {
+    background-color: rgb(233, 206, 239);;
+    width: 21%;
+    height: 255px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+#chocolate:hover {
+    background-color: rgb(233, 206, 239);;
+    margin-left: 100px;
+}
+
+#fileira2{
+    width: 100%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+#fileira2 img{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+#fileira2 img:hover{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    transform: rotate(5deg) scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+
+#Paçoca, #Avelã, #Milho, #Oreo {
+    background-color: rgb(233, 206, 239);;
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-left: 10px; 
+    margin-top: 25px;
+    border-radius: 15px;
+}
+#Paçoca {
+    background-color: rgb(233, 206, 239);;
+    margin-left: 100px;
+}
+#Paçoca:hover, #Avelã:hover, #Milho:hover, #Oreo:hover{
+    background-color: rgb(233, 206, 239);;
+    width: 21%;
+    height: 255px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+#Paçoca:hover {
+    background-color: rgb(233, 206, 239);;
+    margin-left: 100px;
+}
+
+
+/* ESTILOS DO SPAN DE INFORMAÇÃO */
+.info-milkshake {
+    /* Posicionamento Fixo e Centralizado na Tela */
+    position: fixed; /* Fixa na posição da viewport (tela) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+    width: 60vw; /* Largura de 60% da tela */
+    max-width: 450px; /* Limite máximo de largura em telas grandes */
+    height: auto;
+    min-height: 250px; /* Garante um tamanho mínimo */
+    background-color: rgb(0, 0, 0); 
+    color: rgb(231, 142, 249);
+    padding: 30px;
+    /* FORMATO ORGÂNICO/MANCHA: Use bordas assimétricas para o efeito */
+    border-radius: 90% 57% 60% 90% / 90% 70% 60% 90%;  
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 18px; 
+    line-height: 1.5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);  
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    pointer-events: none; 
+}
+.info-milkshake p {
+    color: rgb(231, 142, 249) !important;
+    text-align: center !important;
+}
+
+.info-milkshake.show-info {
+    opacity: 1; /* Fica visível */
+    transform: translate(-50%, -50%) scale(1); /* Posição final (centralizada) no tamanho normal */
+    pointer-events: auto; 
+}
+
+/* NOVO: Estilo para o Fundo Escuro (Overlay) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+    z-index: 999; /* Fica abaixo do modal, mas acima de todo o resto */
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none; /* Não bloqueia cliques quando invisível */
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    pointer-events: auto; /* Bloqueia cliques no fundo para simular um modal */
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* Quando o overlay deve aparecer */
+#overlay.show {
+    display: block;
+}
+
+/* Alternativa com transição suave (opcional) */
+#overlay.modal-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+}
+
+#overlay.modal-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Final fileira*/
+/*inicio rodapé*/
+#rodapé-MilkShake{
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+}
+#rodapé-MilkShake img{
+    width: 90px;
+    float: left;
+    margin-left: 530px;
+}
+
+h4{
+    float: right;
+    margin-right: 500px;
+    margin-top: 40px;
+    color: rgb(160, 8, 190);
+    font-family: "Boldonse", system-ui;
+}
+/* Final Milkshake */
+
+
+/* Início Sorvetes */
+#Título-Sorvetes{
+    width: 100%;
+    height: 50px;
+    /*background-color: lightgray;*/
+    margin-top: 0;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 20px;
+}
+#fileira3{
+    width: 100%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+#fileira3 img{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+#fileira3 img:hover{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    transform: rotate(5deg) scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+#Chocolate{
+    margin-left: 250px; 
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+#Chocolate:hover{
+    margin-left: 250px;
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 21%;
+    height: 250px;
+    float: left;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+#Morango2, #Torta-Alemã{
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-left: 10px; 
+    margin-top: 25px;
+    border-radius: 15px;
+}
+#Morango2:hover, #Torta-Alemã:hover{
+    width: 21%;
+    height: 255px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+#fileira4{
+    width: 100%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+#fileira4 img{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+#fileira4 img:hover{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    transform: rotate(5deg) scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+#Unicórnio{
+    margin-left: 250px; 
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#Unicórnio:hover{
+    margin-left: 250px;
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 21%;
+    height: 250px;
+    float: left;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#Creme, #Uva-e-Nata{
+    background-color: rgb(233, 206, 239);
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-left: 10px; 
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#Creme:hover, #Uva-e-Nata:hover{
+    width: 21%;
+    height: 255px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+#fileira5{
+    width: 100%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+#fileira5 h1 {
+    color:rgb(247, 223, 13);
+    margin-left: 50px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+#fileira5 p {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: -10px;
+    color: #fff;
+}
+#fileira5 img{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+#fileira5 img:hover{
+    width: 60%;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    transform: rotate(5deg) scale(1.1); 
+    transition: all 0.3s ease-in-out;
+}
+
+#Casquinha{
+    margin-left: 380px; 
+    background: linear-gradient(to right, rgb(175,0, 172), rgb(88, 0, 106));
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+#Casquinha:hover{
+    margin-left: 380px;
+    background-color: aqua;
+    position: relative;
+    width: 21%;
+    height: 250px;
+    float: left;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+#Adicionais-Casquinha{
+    background: linear-gradient(to right, rgb(175,0, 172), rgb(88, 0, 106));
+    position: relative;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-left: 10px; 
+    margin-top: 15px;
+    border-radius: 15px;
+}
+#Adicionais-Casquinha:hover{
+    width: 21%;
+    height: 255px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+/* Final Sorvetes */
+
+
+#fileira6{
+    width: 90%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#imagem{
+    width: 30%;
+    height: 250px;
+    float: left;
+    /*background-color: lightcoral;*/
+    margin-left: 100px;
+}
+#imagem img{
+    width: 70%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 15px;
+    /* background-color: lightcoral; */
+}
+#descricao{
+     width: 60%;
+    height: 250px;
+    /*background-color: lightblue;*/
+    text-align: left;
+    margin-left: auto;
+    margin-top: 50px;
+    font-family: "Boldonse", system-ui;
+    color: rgb(88, 0, 106)
+}
+#descricao h1{
+    margin-top: 0px;
+}
+#descricao p{
+    margin-top: -10px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: black;
+}
+#fileira7{
+    width: 90%;
+    height: 300px;
+    /*background-color: lightgray;*/
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#imagem2{
+    width: 30%;
+    height: 250px;
+    float: right;
+    /*background-color: lightcoral;*/
+    margin-left: 100px;
+}
+#imagem2 img{
+    width: 70%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: -20px;
+    border-radius: 15px;
+}
+#descricao2{
+     width: 60%;
+    height: 250px;
+    /*background-color: lightblue;*/
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: "Boldonse", system-ui;
+    color: rgb(88, 0, 106)
+}
+#descricao2 h1{
+    margin-top: 0px;
+}
+#descricao2 p{
+    margin-top: -10px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: black;
+}
+#AdicionaisCachorro {
+    width: 20%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+#AdicionaisCachorro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.7; /* Deixa a imagem mais transparente */
+}
+
+#AdicionaisCachorro p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: -20px;
+
+    z-index: 10;
+}
+
+#AdicionaisCachorro2 {
+    border-radius: 10px;
+    width: 20%;
+    height: 300px;
+    position: relative;
+    margin-left: 620px;
+    background-color: black;
+    margin-top: -300px;
+}
+
+#AdicionaisCachorro2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.7; /* Deixa a imagem mais transparente */
+}
+
+#AdicionaisCachorro2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: -20px;
+    z-index: 10;
+}
+#Título-Cachorro{
+    width: 100%;
+    height: 50px;
+    /*background-color: lightgray;*/
+    margin-top: 0;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 20px;
+}
+#Título-Cachorro1{
+    width: 100%;
+    height: 50px;
+    /*background-color: lightgray;*/
+    margin-top: 400px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 20px;
+}
+#rodapé-Cachorro{
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red;*/
+}
+#rodapé-Cachorro img{
+    width: 90px;
+    float: left;
+    margin-left: 399px;
+}
