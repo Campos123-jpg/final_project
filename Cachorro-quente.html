@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" text="text/css" href="Final2.css"/>
-    <script src="Final.js"></script> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="Final.js" defer></script> 
+
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
     <title>Cachorro-Quente</title> 
 </head>
+
 <body>
 
+    <!-- TOPO -->
     <div id="topoContainer">
         <div id="menu">
             <div class="espacoTop"></div>
@@ -29,109 +25,129 @@
             <a href="../Outras paginas/Empresa.html">Divino</a>
             <a id="button" href="../Outras paginas/Contato.html"><p>Contato</p></a>
         </div>
+
         <div id="logo">
-            <img src="../Imagens/logo-divino (2).png" alt="Logo do site" \/>
+            <img src="../Imagens/logo-divino (2).png" alt="Logo do site"/>
         </div>
     </div>
-   <div> 
-    <div id="Título-Cachorro"><h3>Adicionais</h3>
-    <div id="AdicionaisCachorro">
-        <img src="../Imagens/Doritos 2.jpg" alt="Imagem de fundo com doritos">
-        <p>Doritos R$4,00</p>
+
+    <!-- ADICIONAIS -->
+    <div id="Título-Cachorro">
+        <h3>Adicionais</h3>
+
+        <div class="AdicionalItem">
+            <img src="../Imagens/Doritos 2.jpg" alt="Imagem Doritos">
+            <p>Doritos – R$ 4,00</p>
+        </div>
+
+        <div class="AdicionalItem">
+            <img src="../Imagens/Calabresa 2.jpg" alt="Imagem Calabresa">
+            <p>Calabresa – R$ 4,00</p>
+        </div>
     </div>
-    <div id="AdicionaisCachorro2">
-        <img src="../Imagens/Calabresa 2.jpg" alt="Imagem de fundo com Calabresa">
-        <p>Calabresa<br> R$4,00</p>
+
+    <!-- CACHORRO-QUENTE -->
+    <div id="Título-Cachorro1">
+        <h3>Cachorro-Quente</h3>
     </div>
-    </div>
-    <div id="Título-Cachorro1"><h3>Cachorro-Quente</h3></div>
-    <div id="fileira6">
-    <div id="imagem">
-        <img src="../Imagens/Cachorro Simples.PNG.jpg" alt="Imagem de cachorro-quente">
-    </div>
-    <div id="descricao">
-        <h1>Simples</h1>
-        <p>Delicioso cachorro-quente com salsicha suculenta, pão macio e uma combinação<BR> perfeita de molhos e acompanhamentos. Ideal para um lanche<BR> rápido e saboroso!</p>
-        <button id="btnInfo" onclick="abrirInfo('infoSimples')">Simples</button>
-        <span id="infoSimples" class="info-milkshake">
+
+    <!-- ITEM 1 -->
+    <div class="fileira">
+        <div class="imagem">
+            <img src="../Imagens/Cachorro Simples.PNG.jpg" alt="Cachorro-quente simples">
+        </div>
+
+        <div class="descricao">
+            <h1>Simples</h1>
+            <p>
+                Delicioso cachorro-quente com salsicha suculenta, pão macio e  
+                uma combinação perfeita de molhos e acompanhamentos.
+            </p>
+
+            <button class="btnInfo" data-target="infoSimples">Simples</button>
+
+            <span id="infoSimples" class="info-milkshake">
                 <h1>Simples</h1>
-                <p>Pão<br>
-                Uma Salsicha<br>
-                Molho Vermelho<br>
-                Salsicha<br>
-                Milho<br>
-                Batata Palha<br>
-                Maionese<br>
-                Katchup<br>
-                Mostarda.</p>
+                <p>
+                    Pão<br>
+                    Uma salsicha<br>
+                    Molho vermelho<br>
+                    Milho<br>
+                    Batata palha<br>
+                    Maionese<br>
+                    Ketchup<br>
+                    Mostarda
+                </p>
             </span>
+        </div>
     </div>
-    <div id="fileira7">
-    <div id="imagem2">
-        <img src="../Imagens/Cachorro Duplo.PNG.jpg" alt="Imagem de cachorro-quente">
-    </div>
-    <div id="descricao2">
-        <h1>Duplo</h1>
-        <p>O cachorro-quente completo é uma explosão de sabores! Com salsicha suculenta, pão macio e uma variedade de ingredientes frescos, é a escolha perfeita para quem busca um lanche cheio de sabor e satisfação.</p>
-        <button id="btnInfo" onclick="abrirInfo('infoDuplo')">Duplo</button>
-        <span id="infoDuplo" class="info-milkshake">
+
+    <!-- ITEM 2 -->
+    <div class="fileira">
+        <div class="imagem">
+            <img src="../Imagens/Cachorro Duplo.PNG.jpg" alt="Cachorro-quente duplo">
+        </div>
+
+        <div class="descricao">
+            <h1>Duplo</h1>
+            <p>
+                O cachorro-quente perfeito para quem quer mais!  
+                Uma explosão de ingredientes e sabor.
+            </p>
+
+            <button class="btnInfo" data-target="infoDuplo">Duplo</button>
+
+            <span id="infoDuplo" class="info-milkshake">
                 <h1>Duplo</h1>
-                <p>Pão<br>
-                Duas Salsichas<br>
-                Molho Vermelho<br>
-                Salsicha<br>
-                Ovo<br>
-                Queijo<br>
-                Presunto<br>
-                Milho<br>
-                Batata Palha<br>
-                Maionese<br>
-                Katchup<br>
-                Mostarda.</p>
+                <p>
+                    Pão<br>
+                    Duas salsichas<br>
+                    Molho vermelho<br>
+                    Ovo<br>
+                    Queijo<br>
+                    Presunto<br>
+                    Milho<br>
+                    Batata palha<br>
+                    Maionese<br>
+                    Ketchup<br>
+                    Mostarda
+                </p>
             </span>
+        </div>
     </div>
-    </div>
+
+    <!-- RODAPÉ -->
     <div id="rodapé-Cachorro"> 
-        <img src="../Imagens/Motociclista.png" alt="Imagem de entregador na Moto"/>
+        <img src="../Imagens/Motociclista.png" alt="Motociclista entregador"/>
         <h4>(54) 99631-2541</h4>
     </div> 
-    
-    <script>
-    function abrirInfo(idDoSpan) {
-        const infoSpan = document.getElementById(idDoSpan);
-        const overlay = document.getElementById("overlay");
-        const todosSpans = document.querySelectorAll(".info-milkshake");
 
-        const isOpening = !infoSpan.classList.contains("show-info");
+    <!-- OVERLAY -->
+    <div id="overlay" class="modal-overlay"></div>
 
-        // Fecha todos os outros
-        todosSpans.forEach(span => span.classList.remove("show-info"));
+<script>
+    // ABRE INFO
+    document.querySelectorAll(".btnInfo").forEach(btn => {
+        btn.addEventListener("click", e => {
+            e.stopPropagation();
+            const id = btn.getAttribute("data-target");
+            const span = document.getElementById(id);
+            const overlay = document.getElementById("overlay");
 
-        if (isOpening) {
-            infoSpan.classList.add("show-info");
+            document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
+
+            span.classList.add("show-info");
             overlay.classList.add("show");
-        } else {
-            overlay.classList.remove("show");
-        }
-    }
+        });
+    });
 
-    // FECHA ao clicar fora (overlay)
-    document.addEventListener("click", function (e) {
-        const overlay = document.getElementById("overlay");
-        const spans = document.querySelectorAll(".info-milkshake");
-
-        // Se clicou dentro do span, não fecha
-        if (e.target.closest(".info-milkshake") || e.target.id === "btnInfo") {
-            return;
-        }
-
-        // Fecha tudo
-        spans.forEach(span => span.classList.remove("show-info"));
-        overlay.classList.remove("show");
+    // FECHA AO CLICAR FORA
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
+        document.getElementById("overlay").classList.remove("show");
     });
 </script>
 
-    <div id="overlay" class="modal-overlay"></div>
-
 </body>
 </html>
+

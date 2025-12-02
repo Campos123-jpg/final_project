@@ -3,114 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" text="text/css" href="Final2.css"/>
+    <link rel="stylesheet" text="text/css" href="styles2.css"/>
     <script src="Final.js"></script> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Sorvetes</title>
 </head>
 <body>
 
-    <!-- OVERLAY (elemento que faltava) -->
-    <div id="overlay"></div>
+    <!-- OVERLAY (somente UM!) -->
+    <div id="overlay" class="modal-overlay"></div>
 
     <div id="topoContainer">
         <div id="menu">
             <div class="espacoTop"></div>
-            <a href="../Final.html">Início</a>
-            <a href="../Outras paginas/Empresa.html">Divino</a>
-            <a id="button" href="../Outras paginas/Contato.html"><p>Contato</p></a>
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Divino</a>
+            <a id="button" href="cachorro-quente.html"><p>Contato</p></a>
         </div>
+
         <div id="logo">
-            <img src="../Imagens/logo-divino (2).png" alt="Logo do site" />
+            <img src="../imagens/logo-divino (2).png" alt="Logo do site" />
         </div>
     </div>
 
     <div id="Título-Sorvetes"><h3>Sundae</h3></div>
+
+    <!-- FILEIRA 3 -->
     <div id="fileira3">
+
         <div id="Chocolate">
-            <img src="../Imagens/Sundae_Chocolate.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoChocolate')">Chocolate</button>
+            <img src="../imagens/Sundae_Chocolate.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoChocolate')">Chocolate</button>
             <span id="infoChocolate" class="info-milkshake">
                 <h1>Chocolate</h1>
                 <p>Cremoso e intenso, com o sabor clássico que nunca sai de moda.</p>
             </span>
         </div>
+
         <div id="Morango2">
-            <img src="../Imagens/Sundae_Morango.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoMorango')">Morango</button>
+            <img src="../imagens/Sundae_Morango.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoMorango')">Morango</button>
             <span id="infoMorango" class="info-milkshake">
                 <h1>Morango</h1>
                 <p>Doce e refrescante, com o toque natural do fruto vermelho.</p>
             </span>
         </div>
+
         <div id="Torta-Alemã">
-            <img src="../Imagens/Sundae_Torta_Alemã.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoTortaAlema')">Torta-Alemã</button>
+            <img src="../imagens/Sundae_Torta_Alemã.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoTortaAlema')">Torta-Alemã</button>
             <span id="infoTortaAlema" class="info-milkshake">
                 <h1>Torta-Alemã</h1>
                 <p>Uma combinação clássica de sabores em forma de sorvete.</p>
             </span>
         </div>
+
     </div>
 
+    <!-- FILEIRA 4 -->
     <div id="fileira4">
+
         <div id="Unicórnio">
-            <img src="../Imagens/Sundae_Unicórnio.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoUnicornio')">Unicórnio</button>
+            <img src="../imagens/Sundae_Unicórnio.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoUnicornio')">Unicórnio</button>
             <span id="infoUnicornio" class="info-milkshake">
                 <h1>Unicórnio</h1>
                 <p>Colorido e mágico, perfeito para quem ama diversão.</p>
             </span>
         </div>
+
         <div id="Creme">
-            <img src="../Imagens/Sundae_Creme.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoCreme')">Creme</button>
+            <img src="../imagens/Sundae_Creme.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoCreme')">Creme</button>
             <span id="infoCreme" class="info-milkshake">
                 <h1>Creme</h1>
                 <p>Suave e delicado, o clássico que agrada a todos.</p>
             </span>
         </div>
+
         <div id="Uva-e-Nata">
-            <img src="../Imagens/Sundae_Uva_e_Nata.PNG.png" alt="Imagem de sundae">
-            <button id="btnInfo" onclick="abrirInfo('infoUvaNata')">Uva e Nata</button>
+            <img src="../imagens/Sundae_Uva_e_Nata.PNG.png" alt="Imagem de sundae">
+            <button onclick="abrirInfo('infoUvaNata')">Uva e Nata</button>
             <span id="infoUvaNata" class="info-milkshake">
                 <h1>Uva e Nata</h1>
                 <p>Uma mistura sofisticada de sabores intensos.</p>
             </span>
         </div>
+
     </div>
-        <div id="overlay" class="modal-overlay"></div>
 
     <div id="Título-Sorvetes"><h3>Casquinha</h3></div>
+
     <div id="fileira5">
+
         <div id="Casquinha">
             <h1>Sabores</h1>
-           <p>Chocolate<br>
-               Morango<br>
-               Torta-Alemã<br>
-               Unicórnio<br>
-               Creme<br>
-               Uva e Nata</p>
+            <p>
+                Chocolate<br>
+                Morango<br>
+                Torta-Alemã<br>
+                Unicórnio<br>
+                Creme<br>
+                Uva e Nata
+            </p>
         </div>
+
         <div id="Adicionais-Casquinha">
             <h1>Adicionais</h1>
-            <p>Casquinha R$6,00<br>
-               Cascão R$9,00</p>
+            <p>
+                Casquinha R$6,00<br>
+                Cascão R$9,00
+            </p>
         </div>
+
     </div>
+
     <div id="rodapé-MilkShake"> 
-        <img src="../Imagens/Motociclista.png" alt="Imagem de entregador na Moto"/>
+        <img src="../imagens/Motociclista.png" alt="Imagem de entregador na Moto"/>
         <h4>(54) 99631-2541</h4>
     </div> 
 
@@ -119,33 +134,23 @@
             var infoSpan = document.getElementById(idDoSpan);
             var overlay = document.getElementById('overlay');
             var todosSpans = document.querySelectorAll('.info-milkshake');
-            
-            // 1. Verifica se o span já está aberto
+
             var isOpening = !infoSpan.classList.contains('show-info');
 
-            // 2. Garante que todos os outros spans estejam fechados
-            todosSpans.forEach(function(span) {
-                span.classList.remove('show-info');
-            });
+            todosSpans.forEach(span => span.classList.remove('show-info'));
             
             if (isOpening) {
-                // 3. Abre o span específico e o overlay
                 infoSpan.classList.add('show-info');
                 overlay.classList.add('show');
             } else {
-                // 4. Se estava fechando, remove o overlay
                 overlay.classList.remove('show');
             }
         }
         
-        // Função para fechar o modal e o overlay ao clicar no fundo escuro
         document.getElementById('overlay').addEventListener('click', function() {
-            var todosSpans = document.querySelectorAll('.info-milkshake');
-            // Fecha todos os spans
-            todosSpans.forEach(function(span) {
-                span.classList.remove('show-info');
-            });
-            // Fecha o overlay
+            document.querySelectorAll('.info-milkshake').forEach(span =>
+                span.classList.remove('show-info')
+            );
             this.classList.remove('show');
         });
     </script>

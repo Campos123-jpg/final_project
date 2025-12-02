@@ -3,166 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" text="text/css" href="Final2.css"/>
-    <script src="Final.js"></script> 
+    <link rel="stylesheet" text="text/css" href="styles2.css"/>
+    
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<title>MilkShake</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>MilkShake</title>
 </head>
+
 <body>
 
     <div id="topoContainer">
         <div id="menu">
             <div class="espacoTop"></div>
-            <a href="../Final.html">Início</a>
-            <a href="../Outras paginas/Empresa.html">Divino</a>
-            <a id="button" href="../Outras paginas/Contato.html"><p>Contato</p></a>
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Divino</a>
+            <a id="button" href="cachorro-quente.html"><p>Contato</p></a>
         </div>
+
         <div id="logo">
-            <img src="../Imagens/logo-divino (2).png" alt="Logo do site" \/>
+            <img src="../imagens/logo-divino (2).png" alt="Logo do site"/>
         </div>
     </div>
+
     <div id="titulo-escolha">
         <h3>Escolha o Tamanho</h3>
-    <div id="tamanho">
-        <div id="pequeno">
-            <h2>P</h2>
-            <h2>300ml</h2>
-            <p>R$ 12,00</p>
-        </div>
-        <div id="medio">
-            <h2>M</h2>
-            <h2>500ml</h2>
-            <p>R$ 18,00</p>
-        </div>
-        <div id="grande">
-            <h2>G</h2>
-            <h2>700ml</h2>
-            <p>R$ 24,00</p>
+
+        <div id="tamanho">
+            <div id="pequeno">
+                <h2>P</h2>
+                <h2>300ml</h2>
+                <p>R$ 12,00</p>
+            </div>
+
+            <div id="medio">
+                <h2>M</h2>
+                <h2>500ml</h2>
+                <p>R$ 18,00</p>
+            </div>
+
+            <div id="grande">
+                <h2>G</h2>
+                <h2>700ml</h2>
+                <p>R$ 24,00</p>
+            </div>
         </div>
     </div>
-    </div>
+
+    <!-- FILEIRA 1 -->
     <div id="fileira1">
-    <div id="chocolate">
-        <img src="../Imagens/Milk-Choco-Novo.png" alt="MilkShake de Chocolate"/>
-        <button id="btnInfo" onclick="abrirInfo('infoChocolate')">Chocolate</button>
-        <span id="infoChocolate" class="info-milkshake">
-            <h1>Chocolate</h1>
-            <p>Cremoso e intenso, com o sabor clássico que nunca sai de moda.</p>
-        </span>
+
+        <div id="chocolate">
+            <img src="../imagens/Milk-Choco-Novo.png" alt="MilkShake de Chocolate"/>
+            <button onclick="abrirInfo('infoChocolate')">Chocolate</button>
+            <span id="infoChocolate" class="info-milkshake">
+                <h1>Chocolate</h1>
+                <p>Cremoso e intenso, com o sabor clássico que nunca sai de moda.</p>
+            </span>
+        </div>
+
+        <div id="Ovomaltine">
+            <img src="../imagens/Milk-Ovo-Novo.png" alt="MilkShake de Ovomaltine"/>
+            <button onclick="abrirInfo('infoOvomaltine')">Ovomaltine</button>
+            <span id="infoOvomaltine" class="info-milkshake">
+                <h1>Ovomaltine</h1>
+                <p>Crocância irresistível do Ovomaltine misturada ao frescor gelado.</p>
+            </span>
+        </div>
+
+        <div id="Maracujá">
+            <img src="../imagens/Milk-Mara-Novo.png" alt="MilkShake de Maracujá"/>
+            <button onclick="abrirInfo('infoMaracuja')">Maracujá</button>
+            <span id="infoMaracuja" class="info-milkshake">
+                <h1>Maracujá</h1>
+                <p>Refrescante e tropical, com aquele azedinho que conquista.</p>
+            </span>
+        </div>
+
+        <div id="Morango1">
+            <img src="../imagens/Milk-Mora-Novo.png" alt="MilkShake de Morango"/>
+            <button onclick="abrirInfo('infoMorango')">Morango</button>
+            <span id="infoMorango" class="info-milkshake">
+                <h1>Morango</h1>
+                <p>Doce e delicado, feito com o sabor apaixonante do morango.</p>
+            </span>
+        </div>
+
     </div>
-    <div id="Ovomaltine">
-        <img src="../Imagens/Milk-Ovo-Novo.png" alt="MilkShake de Ovomaltine"/>
-        <button id="btnInfo" onclick="abrirInfo('infoOvomaltine')">Ovomaltine</button>
-        <span id="infoOvomaltine" class="info-milkshake">
-            <h1>Ovomaltine</h1>
-            <p>Crocrância irresistível do Ovomaltine misturada ao frescor gelado.</p>
-        </span>
+
+    <!-- FILEIRA 2 -->
+    <div id="fileira2">
+
+        <div id="Paçoca">
+            <img src="../imagens/Milk-Paço-Novo.png" alt="MilkShake de Paçoca"/>
+            <button onclick="abrirInfo('infoPacoca')">Paçoca</button>
+            <span id="infoPacoca" class="info-milkshake">
+                <h1>Paçoca</h1>
+                <p>Explosão de sabor brasileiro: paçoca cremosa que derrete na boca.</p>
+            </span>
+        </div>
+
+        <div id="Avelã">
+            <img src="../imagens/Milk-Ave-Novo.png" alt="MilkShake de Avelã"/>
+            <button onclick="abrirInfo('infoAvela')">Avelã</button>
+            <span id="infoAvela" class="info-milkshake">
+                <h1>Avelã</h1>
+                <p>Elegante e sofisticado, com o toque marcante da avelã.</p>
+            </span>
+        </div>
+
+        <div id="Milho">
+            <img src="../imagens/Milk-Milho-Novo.png" alt="MilkShake de Milho"/>
+            <button onclick="abrirInfo('infoMilho')">Milho</button>
+            <span id="infoMilho" class="info-milkshake">
+                <h1>Milho</h1>
+                <p>Surpreendente e único, com a doçura suave do milho verde.</p>
+            </span>
+        </div>
+
+        <div id="Oreo">
+            <img src="../imagens/Milk-Oreo-Novo.png" alt="MilkShake de Oreo"/>
+            <button onclick="abrirInfo('infoOreo')">Oreo</button>
+            <span id="infoOreo" class="info-milkshake">
+                <h1>Oreo</h1>
+                <p>Clássico crocante: pedaços de Oreo mergulhados na cremosidade.</p>
+            </span>
+        </div>
+
     </div>
-         <div id="Maracujá">
-        <img src="../Imagens/Milk-Mara-Novo.png" alt="MilkShake de Maracujá"/>
-        <button id="btnInfo" onclick="abrirInfo('infoMaracuja')">Maracujá</button>
-        <span id="infoMaracuja" class="info-milkshake">
-            <h1>Maracujá</h1>
-            <p>Refrescante e tropical, com aquele azedinho que conquista.</p>
-        </span>
-    </div>
-    <div id="Morango1">
-        <img src="../Imagens/Milk-Mora-Novo.png" alt="MilkShake de Morango"/>
-        <button id="btnInfo" onclick="abrirInfo('infoMorango')">Morango</button>
-        <span id="infoMorango" class="info-milkshake">
-            <h1>Morango</h1>
-            <p>Doce e delicado, feito com o sabor apaixonante do morango.</p>
-        </span>
-    </div>
-</div>
-<div id="fileira2">
-    <div id="Paçoca">
-        <img src="../Imagens/Milk-Paço-Novo.png" alt="MilkShake de Paçoca"/>
-        <button id="btnInfo" onclick="abrirInfo('infoPacoca')">Paçoca</button>
-        <span id="infoPacoca" class="info-milkshake">
-            <h1>Paçoca</h1>
-            <p>Explosão de sabor brasileiro: paçoca cremosa que derrete na boca.</p>
-        </span>
-    </div>
-    <div id="Avelã">
-        <img src="../Imagens/Milk-Ave-Novo.png" alt="MilkShake de Avelã"/>
-        <button id="btnInfo" onclick="abrirInfo('infoAvela')">Avelã</button>
-        <span id="infoAvela" class="info-milkshake">
-            <h1>Avelã</h1>
-            <p>Elegante e sofisticado, com o toque marcante da avelã.</p>
-        </span>
-    </div>
-    <div id="Milho">
-        <img src="../Imagens/Milk-Milho-Novo.png" alt="MilkShake de Milho"/>
-        <button id="btnInfo" onclick="abrirInfo('infoMilho')">Milho</button>
-        <span id="infoMilho" class="info-milkshake">
-            <h1>Milho</h1>
-            <p>Surpreendente e único, com a doçura suave do milho verde.</p>
-        </span>
-    </div>
-    <div id="Oreo">
-        <img src="../Imagens/Milk-Oreo-Novo.png" alt="MilkShake de Oreo"/>
-        <button id="btnInfo" onclick="abrirInfo('infoOreo')">Oreo</button>
-        <span id="infoOreo" class="info-milkshake">
-            <h1>Oreo</h1>
-            <p>Clássico crocante: pedaços de Oreo mergulhados na cremosidade.</p>
-        </span>
-    </div>
-</div>
 
     <div id="overlay" class="modal-overlay"></div>
+
     <div id="rodapé-MilkShake"> 
-        <img src="../Imagens/Motociclista.png" alt="Imagem de entregador na Moto"/>
+        <img src="../imagens/Motociclista.png" alt="Imagem de entregador na Moto"/>
         <h4>(54) 99631-2541</h4>
-    </div> 
+    </div>
 
     <script>
         function abrirInfo(idDoSpan) {
             var infoSpan = document.getElementById(idDoSpan);
             var overlay = document.getElementById('overlay');
             var todosSpans = document.querySelectorAll('.info-milkshake');
-            
-            // 1. Verifica se o span já está aberto
+
             var isOpening = !infoSpan.classList.contains('show-info');
 
-            // 2. Garante que todos os outros spans estejam fechados (se houver)
             todosSpans.forEach(function(span) {
                 span.classList.remove('show-info');
             });
             
             if (isOpening) {
-                // 3. Abre o span específico e o overlay
                 infoSpan.classList.add('show-info');
                 overlay.classList.add('show');
             } else {
-                // 4. Se estava fechando, apenas remove o overlay
                 overlay.classList.remove('show');
             }
         }
-        
-        // Função para fechar o modal e o overlay ao clicar no fundo escuro
+
         document.getElementById('overlay').addEventListener('click', function() {
             var todosSpans = document.querySelectorAll('.info-milkshake');
-            // Fecha todos os spans
             todosSpans.forEach(function(span) {
                 span.classList.remove('show-info');
             });
-            // Fecha o overlay
             this.classList.remove('show');
         });
     </script>
-    
 
 </body>
 </html>

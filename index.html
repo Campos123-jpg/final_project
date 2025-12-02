@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+          integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+          
+    <title>Início</title>
+</head>
+<body>
+    <div id="topoContainer">
+        <div id="menu">
+            <div class="espacoTop"></div>
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Divino</a>
+            <a id="button" href="contato.html"><p>Contato</p></a>
+        </div>
+        <div id="logo">
+            <img src="imagens/logo-divino (2).png" alt="Logo do site" title="Divino"/>
+        </div>
+    </div>
+    
+    <div> 
+        <img id="banner" src="imagens/Banner 2.0.png" alt="Banner do site"/>
+    </div>
+   
+    <div id="conteudoSite">
+        <div id="esquerda">
+            <div class="imagem"><img src="imagens/Ícone-Açaí.PNG.png" alt="Açaí"></div>
+            <h1>Açai</h1> 
+            <p>No Divino Açaí, o sabor é só o começo. Cada copo é feito pra recarregar suas energias e adoçar o seu dia do jeito certo. Cremoso, refrescante e irresistível — simplesmente divino.</p>
+            <button onclick="abriracaihtml()">Mais</button>
+        </div>
+        
+        <div id="meio">
+            <div class="imagem"><img src="imagens/Ícone-MilkShake.PNG.png" alt="MilkShake"></div>
+            <h1>MilkShake</h1>
+            <p>Mistura perfeita entre cremosidade e sabor. Cada milk shake do Divino é batido na medida certa pra te conquistar no primeiro gole. Refresque-se com prazer em cada camada doce e gelada.</p>
+            <button onclick="abrirMilkhtml()">Mais</button>
+        </div>
+        
+        <div id="direita">
+            <div class="imagem"><img src="imagens/Ícone-Sundae.PNG.png" alt="Sorvetes"></div>
+            <h1>Sorvetes</h1> 
+            <p>Coloridos, leves e cheios de sabor. Nossos sorvetes equilibram frescor, doçura e aquela sensação boa de felicidade. Perfeitos pra adoçar qualquer momento — cada sorvete é um pedacinho de paraíso.</p>
+            <button onclick="abrirPicoleshtml()">Mais</button>
+        </div>
+        
+        <div id="direita-canto">
+            <div class="imagem"><img src="imagens/Ícone-Cachorro.PNG.png" alt="Cachorro Quente"></div>
+            <h1>Cachorro-Quente</h1> 
+            <p>Quentes e cheios de sabor, nossos cachorros-quentes são preparados com combinações que conquistam qualquer paladar. — do simples ao divino</p>
+            <button onclick="abrirCachorrohtml()">Mais</button>
+        </div>
+    </div>
+   
+    
+    <section class="localizacao-jah">
+    <svg class="wave-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path class="wave-bg" d="M0,70 L1440,70 L1440,100 L0,100 Z"></path>
+        <path class="wave-wave" d="M0,30 C300,70 400,-10 700,30 C1000,70 1140,50 1440,30 L1440,100 L0,100 Z"></path>
+    </svg>
+    <div class="ilustracao">
+         <img src="imagens/Localização.png" 
+             alt="Celular com mapa de localização" 
+             class="imagem-mapa">
+    </div>
+
+        <div class="conteudo-texto">
+            <h1>Procurando Divino</h1>
+            <p>ENCONTRE A UNIDADE MAIS PRÓXIMA!</p>
+            
+            <a href="https://www.google.com/maps/search/Divino+Açai+proximo+a+mim" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="botao-localizar link-localizar">
+            Localizar 
+            <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </section>
+
+<script>
+    function abriracaihtml() {
+        window.open ('acai.html' , '_blank'); // Corrigido caminho (presumindo que está no mesmo nível)
+    }
+    function abrirMilkhtml() {
+        window.open ('milkShake.html' , '_blank'); // Corrigido caminho
+    }
+    function abrirPicoleshtml() {
+        window.open ('picoles.html' , '_blank'); // Corrigido caminho
+    }
+    function abrirCachorrohtml() {
+        window.open ('cachorro-quente.html' , '_blank'); // Corrigido caminho
+    }
+</script>
+</body>
+</html>
