@@ -65,7 +65,7 @@
                 uma combinação perfeita de molhos e acompanhamentos.
             </p>
 
-            <button id="btnInfo" data-target="infoDuplo">Duplo</button>
+            <button id="btnInfo" class="btn-info" data-target="infoDuplo">Duplo</button>
 
             <span id="infoSimples" class="info-milkshake">
                 <h1>Simples</h1>
@@ -96,7 +96,7 @@
                 Uma explosão de ingredientes e sabor.
             </p>
 
-            <button id="btnInfo" data-target="infoDuplo">Duplo</button>
+            <button id="btnInfo" class="btn-info" data-target="infoDuplo">Duplo</button>
 
             <span id="infoDuplo" class="info-milkshake">
                 <h1>Duplo</h1>
@@ -128,25 +128,27 @@
 
 <script>
     // ABRE INFO
-    document.querySelectorAll(".btnInfo").forEach(btn => {
-        btn.addEventListener("click", e => {
-            e.stopPropagation();
-            const id = btn.getAttribute("data-target");
-            const span = document.getElementById(id);
-            const overlay = document.getElementById("overlay");
+    document.querySelectorAll('.btn-info').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); // impede fechar na hora
 
-            document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
+    const id = btn.dataset.target;
+    const span = document.getElementById(id);
+    const overlay = document.getElementById("overlay");
 
-            span.classList.add("show-info");
-            overlay.classList.add("show");
-        });
-    });
+    // Fecha todos antes de abrir só o clicado
+    document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
 
-    // FECHA AO CLICAR FORA
-    document.addEventListener("click", () => {
-        document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
-        document.getElementById("overlay").classList.remove("show");
-    });
+    span.classList.add("show-info");
+    overlay.classList.add("show");
+  });
+});
+
+// FECHAR CLICANDO FORA
+document.getElementById("overlay").addEventListener("click", () => {
+    document.querySelectorAll(".info-milkshake").forEach(s => s.classList.remove("show-info"));
+    document.getElementById("overlay").classList.remove("show");
+});
 </script>
 
 </body>
